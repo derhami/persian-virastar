@@ -14,7 +14,6 @@ export const ShortcutsModal: React.FC<ShortcutsModalProps> = ({ isOpen, onClose 
     { key: 'Ctrl + Shift + C', desc: 'کپی مستقیم متن خروجی به کلیپ‌بورد' },
     { key: 'Ctrl + Shift + D', desc: 'تغییر وضعیت نمایش تفاوت‌ها (Diff Mode)' },
     { key: 'Ctrl + Shift + S', desc: 'باز کردن پنجره انتخاب متن‌های نمونه' },
-    { key: 'Ctrl + Shift + A', desc: 'باز کردن پنجره ویراستار هوشمند AI' },
   ];
 
   return (

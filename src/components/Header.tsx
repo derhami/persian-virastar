@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, History, Keyboard, Moon, Sun, Feather, SlidersHorizontal } from 'lucide-react';
+import { History, Keyboard, Moon, Sun, Feather, SlidersHorizontal } from 'lucide-react';
 import { VirastarLogo } from './VirastarLogo';
 
 interface HeaderProps {
@@ -7,7 +7,6 @@ interface HeaderProps {
   onToggleTheme: () => void;
   onOpenSamples: () => void;
   onOpenHistory: () => void;
-  onOpenAiModal: () => void;
   onOpenShortcuts: () => void;
   onOpenSettings: () => void;
   historyCount: number;
@@ -18,7 +17,6 @@ export const Header: React.FC<HeaderProps> = ({
   onToggleTheme,
   onOpenSamples,
   onOpenHistory,
-  onOpenAiModal,
   onOpenShortcuts,
   onOpenSettings,
   historyCount,
@@ -57,16 +55,6 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <SlidersHorizontal className="w-4 h-4 accent-text" />
             <span className="hidden sm:inline">تنظیمات</span>
-          </button>
-
-          {/* AI Assistant Button */}
-          <button
-            onClick={onOpenAiModal}
-            className="flex items-center justify-center gap-1.5 px-2.5 sm:px-3.5 h-9 btn-radius accent-bg accent-hover-bg text-white text-xs font-bold transition-all shadow-xs shrink-0"
-            title="ویرایش هوشمند AI"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-amber-200" />
-            <span className="hidden xs:inline">هوش مصنوعی</span>
           </button>
 
           {/* History Drawer */}

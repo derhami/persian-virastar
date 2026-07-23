@@ -7,7 +7,6 @@ import {
   Trash2,
   FileUp,
   Layers,
-  Sparkles,
   Check,
   Zap,
   Info,
@@ -27,9 +26,6 @@ import {
   FileCode,
   FileText,
   File,
-  Wand2,
-  Hash,
-  Sparkle,
   GripVertical,
   Underline,
   Strikethrough,
@@ -56,7 +52,6 @@ interface VirastarEditorProps {
   diffStats: DiffStats;
   diffTokens: DiffToken[];
   onCopyOutput: () => void;
-  onOpenAiModal: () => void;
   onOpenShareModal: () => void;
   onShowToast: (msg: string, type?: 'success' | 'error' | 'info') => void;
 }
@@ -78,7 +73,6 @@ export const VirastarEditor: React.FC<VirastarEditorProps> = ({
   diffStats,
   diffTokens,
   onCopyOutput,
-  onOpenAiModal,
   onOpenShareModal,
   onShowToast,
 }) => {

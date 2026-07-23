@@ -49,10 +49,6 @@ export interface HistoryItem {
   stats: TextStats;
 }
 
-export type AiMode = 'proofread' | 'tone' | 'summarize' | 'simplify' | 'custom';
-
-export type AiTone = 'رسمی و اداری' | 'ادبی و فاخر' | 'محاوره‌ای و صمیمی' | 'علمی و دانشگاهی' | 'مطبوعاتی و خبری' | 'کودک و نوجوان';
-
 export interface SampleText {
   id: string;
   title: string;

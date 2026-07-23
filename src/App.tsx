@@ -4,7 +4,6 @@ import { VirastarEditor } from './components/VirastarEditor';
 import { OptionsPanel } from './components/OptionsPanel';
 import { SampleTextModal } from './components/SampleTextModal';
 import { HistoryDrawer } from './components/HistoryDrawer';
-import { AiAssistantModal } from './components/AiAssistantModal';
 import { ShortcutsModal } from './components/ShortcutsModal';
 import { ShareModal } from './components/ShareModal';
 import { Toast, ToastMessage } from './components/Toast';
@@ -76,7 +75,6 @@ export default function App() {
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
   const [isSampleOpen, setIsSampleOpen] = useState<boolean>(false);
   const [isHistoryOpen, setIsHistoryOpen] = useState<boolean>(false);
-  const [isAiOpen, setIsAiOpen] = useState<boolean>(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState<boolean>(false);
   const [isShareOpen, setIsShareOpen] = useState<boolean>(false);
 
@@ -286,11 +284,6 @@ export default function App() {
         e.preventDefault();
         setIsSampleOpen(true);
       }
-      // Ctrl + Shift + A -> Open AI
-      if (e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) {
-        e.preventDefault();
-        setIsAiOpen(true);
-      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -306,7 +299,6 @@ export default function App() {
         onToggleTheme={() => setDarkMode((prev) => !prev)}
         onOpenSamples={() => setIsSampleOpen(true)}
         onOpenHistory={() => setIsHistoryOpen(true)}
-        onOpenAiModal={() => setIsAiOpen(true)}
         onOpenShortcuts={() => setIsShortcutsOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}
         historyCount={history.length}
@@ -332,7 +324,6 @@ export default function App() {
             diffStats={diffStats}
             diffTokens={diffTokens}
             onCopyOutput={handleCopyOutput}
-            onOpenAiModal={() => setIsAiOpen(true)}
             onOpenShareModal={() => setIsShareOpen(true)}
             onShowToast={showToastMsg}
           />
@@ -397,16 +388,6 @@ export default function App() {
         onClearHistory={() => {
           setHistory([]);
           showToastMsg('تاریخچه پاکسازی شد.', 'info');
-        }}
-      />
-
-      <AiAssistantModal
-        isOpen={isAiOpen}
-        onClose={() => setIsAiOpen(false)}
-        inputText={inputText}
-        onApplyResult={(result) => {
-          setOutputText(result);
-          showToastMsg('نتیجه هوش مصنوعی روی خروجی اعمال شد.');
         }}
       />
 

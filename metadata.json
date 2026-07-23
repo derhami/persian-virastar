@@ -1,6 +1,0 @@
-{
-  "name": "ویراستار فارسی",
-  "description": "ابزار حرفه‌ای و پیشرفته ویراستاری، پاکسازی و نرمال‌سازی متن فارسی",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
