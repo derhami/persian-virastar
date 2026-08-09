@@ -331,26 +331,7 @@ export default function App() {
         </div>
       </main>
 
-      {/* Copyright Footer */}
-      <footer className="py-1.5 md:py-2 px-3 md:px-4 text-center border-t main-border sub-bg text-[10px] md:text-[11px] muted-text shrink-0 flex flex-row flex-nowrap items-center justify-between gap-x-2 max-w-[1600px] w-full mx-auto" id="creator-footer">
-        <div className="flex items-center gap-1 shrink-0">
-          <span>توسعه:</span>
-          <a
-            href="https://derhami.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-bold accent-text hover:underline transition-all"
-            id="creator-link"
-          >
-            حمیدرضا درهمی
-          </a>
-        </div>
-        <div className="shrink-0">
-          <span>© {new Date().getFullYear()} ویراستار فارسی</span>
-        </div>
-      </footer>
-
-      {/* Settings Modal Drawer */}
+      {/* Footer */}
       {isSettingsOpen && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 animate-fadeIn">
           <div className="w-full max-w-3xl h-full max-h-[90vh] card-bg border main-border card-radius shadow-2xl overflow-hidden flex flex-col">

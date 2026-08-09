@@ -19,7 +19,7 @@ export const DiffViewer: React.FC<DiffViewerProps> = ({ tokens, stats }) => {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="px-2.5 py-0.5 rounded-full bg-emerald-600/10 border border-emerald-600/20 text-emerald-800 dark:text-emerald-300 font-medium">
+          <span className="px-2.5 py-0.5 rounded-full bg-brand-600/10 border border-brand-600/20 text-brand-800 dark:text-brand-300 font-medium">
             افزوده/اصلاح‌شده ({stats.additionsCount})
           </span>
           <span className="px-2.5 py-0.5 rounded-full bg-rose-600/10 border border-rose-600/20 text-rose-800 dark:text-rose-300 font-medium">
@@ -45,7 +45,7 @@ export const DiffViewer: React.FC<DiffViewerProps> = ({ tokens, stats }) => {
             return (
               <span
                 key={index}
-                className="bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-200 border-b-2 border-emerald-600 px-0.5 rounded"
+                className="bg-brand-100 dark:bg-brand-900/40 text-brand-900 dark:text-brand-200 border-b-2 border-brand-600 px-0.5 rounded"
                 title="متن افزوده‌شده یا اصلاح‌شده"
               >
                 {token.value}

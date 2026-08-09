@@ -1,6 +1,13 @@
-@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+
+/* IRANYekanX VF - Variable Font */
+@font-face {
+  font-family: 'IRANYekanX';
+  src: url('/fonts/IRANYekanXVF.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
 
 /* Sweeping brand tokens — Derhami Design System
    Primary brand navy #1D2EA0, white #FFFFFF,
@@ -33,9 +40,9 @@
   --color-stone-950: #1A1C22;
 }
 
-/* Force Vazirmatn font across all elements */
+/* Force IRANYekanX font across all elements */
 * {
-  font-family: 'Vazirmatn', 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-family: 'IRANYekanX', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 :root {
@@ -87,7 +94,7 @@
 }
 
 body {
-  font-family: 'Vazirmatn', -apple-system, sans-serif !important;
+  font-family: 'IRANYekanX', -apple-system, sans-serif !important;
   background-color: var(--bg-app);
   color: var(--text-main);
   transition: background-color 0.2s ease, color 0.2s ease;

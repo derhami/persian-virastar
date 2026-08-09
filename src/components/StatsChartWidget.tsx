@@ -34,8 +34,8 @@ export const StatsChartWidget: React.FC<StatsChartWidgetProps> = ({
         score: 90,
         label: 'روان',
         level: 'آسان',
-        color: 'text-emerald-600 dark:text-emerald-400',
-        badgeBg: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/20'
+        color: 'text-brand-600 dark:text-brand-400',
+        badgeBg: 'bg-brand-500/10 text-brand-700 dark:text-brand-300 border-brand-500/20'
       };
     } else if (avgWordsPerSentence <= 20) {
       return {
@@ -145,9 +145,9 @@ export const StatsChartWidget: React.FC<StatsChartWidgetProps> = ({
 
           {/* Item 5: Reading Time Metric */}
           <div className="flex items-center gap-1.5 shrink-0">
-            <Clock className="w-3.5 h-3.5 text-emerald-500/80 shrink-0" />
+            <Clock className="w-3.5 h-3.5 accent-text shrink-0" />
             <span className="text-[11px] main-text">
-              زمان مطالعه: <strong className="font-extrabold text-emerald-600 dark:text-emerald-400">{outputStats.readingTimeMinutes}</strong> دقیقه
+              زمان مطالعه: <strong className="font-extrabold accent-text">{outputStats.readingTimeMinutes}</strong> دقیقه
             </span>
           </div>
 
