@@ -42,8 +42,8 @@ export const StatsChartWidget: React.FC<StatsChartWidgetProps> = ({
         score: 70,
         label: 'عمومی',
         level: 'متوسط',
-        color: 'text-amber-600 dark:text-amber-400',
-        badgeBg: 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/20'
+        color: 'text-brand-600 dark:text-brand-400',
+        badgeBg: 'bg-brand-500/10 text-brand-700 dark:text-brand-300 border-brand-500/20'
       };
     } else {
       return {
@@ -173,17 +173,17 @@ export const StatsChartWidget: React.FC<StatsChartWidgetProps> = ({
               >
                 <Tooltip
                   contentStyle={{
-                    backgroundColor: 'rgba(32, 30, 27, 0.95)',
-                    borderColor: '#3b3831',
+                    backgroundColor: 'rgba(26, 28, 34, 0.95)',
+                    borderColor: '#4A4E5D',
                     borderRadius: '4px',
-                    color: '#eae6df',
+                    color: '#F5F6FA',
                     fontSize: '9px',
                     direction: 'rtl',
                     padding: '2px 6px'
                   }}
                 />
-                <Bar dataKey="ورودی" fill="#9c978b" radius={[1, 1, 0, 0]} />
-                <Bar dataKey="خروجی" fill="#c27e5d" radius={[1, 1, 0, 0]} />
+                <Bar dataKey="ورودی" fill="#9AA1B1" radius={[1, 1, 0, 0]} />
+                <Bar dataKey="خروجی" fill="#1D2EA0" radius={[1, 1, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>

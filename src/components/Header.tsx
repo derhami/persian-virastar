@@ -86,7 +86,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="w-9 h-9 flex items-center justify-center btn-radius card-bg hover-bg main-text border main-border transition-all shrink-0"
             title={darkMode ? 'حالت روشن' : 'حالت تاریک'}
           >
-            {darkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-500" />}
+            {darkMode ? <Sun className="w-4 h-4 text-brand-400" /> : <Moon className="w-4 h-4 text-brand-500" />}
           </button>
         </div>
 

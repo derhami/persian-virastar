@@ -2,51 +2,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* Sweeping brand tokens — Derhami Design System
+   Primary brand navy #1D2EA0, white #FFFFFF,
+   neutral charcoal #2E2F29, complementary crimson #C6142A */
+@theme {
+  /* Primary brand navy scale */
+  --color-brand-50: #F0F3FD;
+  --color-brand-100: #E1E6FB;
+  --color-brand-200: #C3CDF5;
+  --color-brand-300: #9FADED;
+  --color-brand-400: #7284E3;
+  --color-brand-500: #4D63D5;
+  --color-brand-600: #1D2EA0;
+  --color-brand-700: #18298B;
+  --color-brand-800: #131F6D;
+  --color-brand-900: #0C144B;
+  --color-brand-950: #070B2E;
+
+  /* Neutral ramp (tuned to brand neutral #2B2F29) */
+  --color-stone-50: #FFFFFF;
+  --color-stone-100: #F2F3F8;
+  --color-stone-200: #E2E4EC;
+  --color-stone-300: #C3C7D4;
+  --color-stone-400: #9AA1B1;
+  --color-stone-500: #717A8C;
+  --color-stone-600: #565B6B;
+  --color-stone-700: #42494F;
+  --color-stone-800: #33363E;
+  --color-stone-900: #2B2F29;
+  --color-stone-950: #1A1C22;
+}
+
 /* Force Vazirmatn font across all elements */
 * {
   font-family: 'Vazirmatn', 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 :root {
-  /* Unified Editorial Typography Studio Theme (Light) */
-  --bg-app: #F8F7F4;
+  /* Derhami Brand Theme (Light) */
+  --bg-app: #F2F3F8;
   --bg-card: #FFFFFF;
   --bg-header: rgba(255, 255, 255, 0.92);
-  --bg-sub: #F3F1EC;
-  --bg-hover: #E9E6DF;
-  --border-main: #E2DDD5;
-  --border-sub: #EDEAE4;
-  --text-main: #1C1917;
-  --text-sub: #332F2B;
-  --text-muted: #736D65;
-  --accent-main: #C25E00;
-  --accent-hover: #A85000;
-  --accent-bg: rgba(194, 94, 0, 0.08);
-  --accent-text: #B85600;
+  --bg-sub: #E2E4EC;
+  --bg-hover: #D8DBE6;
+  --border-main: #C3C7D4;
+  --border-sub: #E2E4EC;
+  --text-main: #2E2F29;
+  --text-sub: #3A3E46;
+  --text-muted: #717A8C;
+  --accent-main: #1D2EA0;
+  --accent-hover: #1829A9;
+  --accent-bg: rgba(29, 46, 160, 0.08);
+  --accent-text: #1D2EA0;
   --radius-card: 14px;
   --radius-btn: 8px;
   --radius-badge: 9999px;
   --border-width: 1px;
-  --shadow-card: 0 4px 20px -2px rgba(28, 25, 23, 0.05), 0 1px 3px rgba(28, 25, 23, 0.03);
+  --shadow-card: 0 4px 20px -2px rgba(29, 46, 160, 0.06), 0 1px 3px rgba(29, 46, 160, 0.04);
   --font-weight-title: 700;
 }
 
 /* Dark Mode Theme overrides */
 .dark, html.dark {
-  --bg-app: #121110;
-  --bg-card: #1B1917;
-  --bg-header: rgba(27, 25, 23, 0.92);
-  --bg-sub: #24211E;
-  --bg-hover: #2E2A26;
-  --border-main: #38332E;
-  --border-sub: #2B2723;
-  --text-main: #F5F3EF;
-  --text-sub: #D6D1C7;
-  --text-muted: #948E85;
-  --accent-main: #E07A26;
-  --accent-hover: #C76718;
-  --accent-bg: rgba(224, 122, 38, 0.16);
-  --accent-text: #F08C38;
+  --bg-app: #1A1C22;
+  --bg-card: #24262E;
+  --bg-header: rgba(36, 38, 46, 0.92);
+  --bg-sub: #2E313A;
+  --bg-hover: #3A3E49;
+  --border-main: #4A4E5D;
+  --border-sub: #33363E;
+  --text-main: #F5F6FA;
+  --text-sub: #C3C7D4;
+  --text-muted: #9AA1B1;
+  --accent-main: #6B7FE8;
+  --accent-hover: #8395F0;
+  --accent-bg: rgba(107, 127, 232, 0.16);
+  --accent-text: #B9C3F7;
   --radius-card: 14px;
   --radius-btn: 8px;
   --radius-badge: 9999px;
@@ -89,12 +120,12 @@ body {
 .sub-bg { background-color: var(--bg-sub); }
 .hover-bg:hover { background-color: var(--bg-hover); }
 
-.main-border { 
-  border-color: var(--border-main); 
+.main-border {
+  border-color: var(--border-main);
   border-width: var(--border-width);
 }
-.sub-border { 
-  border-color: var(--border-sub); 
+.sub-border {
+  border-color: var(--border-sub);
 }
 
 .main-text { color: var(--text-main); }

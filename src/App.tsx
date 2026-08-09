@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import { VirastarEditor } from './components/VirastarEditor';
 import { OptionsPanel } from './components/OptionsPanel';
 import { SampleTextModal } from './components/SampleTextModal';
@@ -291,7 +292,7 @@ export default function App() {
   }, [handleRunProcess, showToastMsg]);
 
   return (
-    <div className="h-screen overflow-hidden flex flex-col font-sans app-bg main-text transition-colors duration-200 dir-rtl selection:bg-amber-500/20">
+    <div className="h-screen overflow-hidden flex flex-col font-sans app-bg main-text transition-colors duration-200 dir-rtl selection:bg-brand-600/20">
       
       {/* Top Fixed Header */}
       <Header
@@ -450,6 +451,9 @@ export default function App() {
 
       {/* Toast Notification */}
       <Toast toast={toast} onClose={() => setToast(null)} />
+
+      {/* Footer */}
+      <Footer />
 
     </div>
   );
