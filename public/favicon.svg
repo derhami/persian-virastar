@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="پرشین ویراستار - Persian Virastar">
+  <defs>
+    <linearGradient id="virastar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="url(#virastar-bg)"/>
+  <g stroke="#ffffff" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="166" y1="176" x2="250" y2="340"/>
+    <line x1="250" y1="340" x2="344" y2="176"/>
+  </g>
+  <circle cx="392" cy="392" r="22" fill="#8b5cf6"/>
+</svg>
