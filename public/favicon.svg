@@ -1,14 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="پرشین ویراستار - Persian Virastar">
-  <defs>
-    <linearGradient id="virastar-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#27272a"/>
-      <stop offset="100%" stop-color="#18181b"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="118" fill="url(#virastar-bg)"/>
-  <g stroke="#ffffff" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" fill="none">
-    <line x1="166" y1="176" x2="250" y2="340"/>
-    <line x1="250" y1="340" x2="344" y2="176"/>
-  </g>
-  <circle cx="392" cy="392" r="22" fill="#8b5cf6"/>
+<svg width="1254" height="1254" viewBox="0 0 1254 1254" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 600C0 317.157 0 175.736 87.868 87.868C175.736 0 317.157 0 600 0H654C936.843 0 1078.26 0 1166.13 87.868C1254 175.736 1254 317.157 1254 600V654C1254 936.843 1254 1078.26 1166.13 1166.13C1078.26 1254 936.843 1254 654 1254H600C317.157 1254 175.736 1254 87.868 1166.13C0 1078.26 0 936.843 0 654V600Z" fill="url(#paint0_linear_2550_17151)"/>
+<path d="M460.433 327.082V672.323L589.122 800.766L667.824 798.721L798.475 667.496V327H927V715.11L717.401 924.545C656.943 927.409 593.049 931.254 533.899 922.5L338.617 727.3C335.099 722.228 327 705.375 327 700.793V334.117L334.118 327H460.27L460.433 327.082Z" fill="#FDD14C"/>
+<defs>
+<linearGradient id="paint0_linear_2550_17151" x1="627" y1="0" x2="627" y2="1254" gradientUnits="userSpaceOnUse">
+<stop stop-color="#252528"/>
+<stop offset="1" stop-color="#18181B"/>
+</linearGradient>
+</defs>
 </svg>

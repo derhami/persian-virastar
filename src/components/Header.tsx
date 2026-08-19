@@ -27,9 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
         
         {/* Brand & Title */}
         <div className="flex items-center gap-2.5">
-          <div className="w-9 h-9 accent-light-bg border border-[var(--accent-text)]/20 rounded-lg flex items-center justify-center shadow-xs shrink-0 transition-all">
-            <VirastarLogo size={24} className="accent-text" />
-          </div>
+          <VirastarLogo size={36} className="shrink-0 drop-shadow-sm" />
           <div>
             <div className="flex items-center gap-1.5">
               <h1 className="text-sm sm:text-base title-weight main-text tracking-tight font-bold">ویراستار فارسی</h1>

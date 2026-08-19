@@ -10,30 +10,20 @@ export const VirastarLogo: React.FC<VirastarLogoProps> = ({ className = '', size
     <svg
       width={size}
       height={size}
-      viewBox="0 0 100 100"
+      viewBox="0 0 1254 1254"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`shrink-0 ${className}`}
       id="virastar-custom-logo"
     >
-      {/* 
-        This path represents the highly precise stylized "V" / "و" logo of Virastar.
-        It is rendered as a solid filled shape that matches the brand's primary/accent color perfectly.
-      */}
-      <path
-        d="M 28,38 
-           C 33,37 41,37 47,38 
-           C 47,38 39,40 35,43 
-           C 33,48 41,56 47,56 
-           C 51,56 53,49 55,41 
-           C 59,29 64,22 71,22 
-           C 77,22 81,26 79,33 
-           C 76,43 67,55 59,64 
-           C 54,70 47,72 41,67 
-           C 33,60 27,48 28,38 Z"
-        fill="currentColor"
-        id="logo-path"
-      />
+      <path d="M0 600C0 317.157 0 175.736 87.868 87.868C175.736 0 317.157 0 600 0H654C936.843 0 1078.26 0 1166.13 87.868C1254 175.736 1254 317.157 1254 600V654C1254 936.843 1254 1078.26 1166.13 1166.13C1078.26 1254 936.843 1254 654 1254H600C317.157 1254 175.736 1254 87.868 1166.13C0 1078.26 0 936.843 0 654V600Z" fill="url(#paint0_linear_2550_17151)"/>
+      <path d="M460.433 327.082V672.323L589.122 800.766L667.824 798.721L798.475 667.496V327H927V715.11L717.401 924.545C656.943 927.409 593.049 931.254 533.899 922.5L338.617 727.3C335.099 722.228 327 705.375 327 700.793V334.117L334.118 327H460.27L460.433 327.082Z" fill="#FDD14C"/>
+      <defs>
+        <linearGradient id="paint0_linear_2550_17151" x1="627" y1="0" x2="627" y2="1254" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#252528"/>
+          <stop offset="1" stop-color="#18181B"/>
+        </linearGradient>
+      </defs>
     </svg>
   );
 };
